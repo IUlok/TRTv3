@@ -211,7 +211,7 @@ if __name__ == "__main__":
                     printl(town['mayor']['name'])
                     printl(datetime.fromtimestamp(town["timestamps"]["registered"] // 1000))
                     printl(datetime.fromtimestamp(town["mayorRegistred"] // 1000))
-                    printl(town['stats']['numTownBlocks'], l=10)
+                    printl(town['stats']['numTownBlocks'], l=5)
                     if town["status"]["isOpen"]:
                         printl("YES", l=7)
                     else:
@@ -223,3 +223,7 @@ if __name__ == "__main__":
                     f.write("\n")
                 except Exception as E:
                     pass
+
+    print("\n ===[ ТЕПЕРЬ ОКНО МОЖНО ЗАКРЫТЬ. ]===")
+    while(1):
+        input("")
